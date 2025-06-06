@@ -1,14 +1,12 @@
 from openai import OpenAI
 import streamlit as st
-import os
-from dotenv import load_dotenv
-load_dotenv()      
 
-# Get the OpenAI API key from the environment variable
+
+# import os
+# from dotenv import load_dotenv
+# load_dotenv()      
 # openai_api_key = os.getenv("OPENAI_API_KEY")
-# print("OpenAI API Key:", openai_api_key)  
 
-# # Set OpenAI API key from Streamlit secrets
 openai_api_key= st.secrets["OPENAI_API_KEY"]
 
 st.title("💬 Chatbot")
