@@ -4,4 +4,10 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "asyncio>=3.4.3",
+    "dotenv>=0.9.9",
+    "openai>=1.84.0",
+    "openai-agents>=0.0.17",
+    "streamlit>=1.45.1",
+]
