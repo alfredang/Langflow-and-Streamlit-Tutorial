@@ -1,12 +1,12 @@
-from groq import Groq
+from openai import OpenAI
 from dotenv import load_dotenv
 load_dotenv()
 import os
 
-groq_api_key = os.getenv('GROQ_API_KEY')
+openai_api_key=os.getenv("OPENAI_API_KEY")
 
-groq = Groq()
-messages = [{"role": "user", "content": "What is 2+2?"}]
+openai=OpenAI()
+message = [{'role':'user','content':"what is 2+3?"}]
 
-response = groq.chat.completions.create(model='llama-3.3-70b-versatile', messages=messages)
+response = openai.chat.completions.create(model="gpt-4o-mini",messages=message)
 print(response.choices[0].message.content)
