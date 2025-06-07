@@ -1,5 +1,5 @@
 python-dotenv
 numpy
 pandas
-scikit-llm
 streamlit
+streamlit-tags
